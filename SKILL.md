@@ -17,22 +17,24 @@ Analyze a listed company from official filings and produce a cited report ground
 6. Distinguish carefully between (a) financial data for a period, (b) documents disclosed in a later calendar year, and (c) outlook, guidance, financing plans, or management commentary. Do not treat a disclosure date in a later year as financial data for that later year.
 7. If the later requested year does not yet have a full-year report, default to the latest official in-period financial report for that year, such as an interim report, quarterly report, or operating update, rather than substituting outlook language or a prior-year annual results announcement released in that later year.
 8. Before drafting conclusions, verify that each requested year is represented by real financial data. If coverage is incomplete, state the gap explicitly and narrow the claim accordingly.
-9. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
-10. Search for key metrics by theme:
+9. Before finalizing any table, chart, KPI card, exhibit, or period-labelled summary, validate every numeric value against its cited source and reporting period. Do not relabel prior-period figures as current-period figures, and do not infer reporting periods from file dates or disclosure dates alone.
+10. If period-accurate figures for a requested table or chart are unavailable, incomplete, or extraction is uncertain, do not backfill the exhibit with another period’s numbers. State the gap explicitly, omit the exhibit, or downgrade it to a qualified text explanation.
+11. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
+12. Search for key metrics by theme:
    - revenue and segment mix
    - EBITDA / EBIT / profit drivers
    - gross debt / net debt / gearing / net debt-to-equity
    - cash balances / undrawn facilities
    - borrowing cost / interest cover
    - financing instruments such as bonds, MTNs, perpetual capital securities, green finance
-11. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
-12. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
-13. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
-14. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
-15. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
-16. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
-17. Build conclusions from evidence, not from unstated assumptions.
-18. Output a single-file HTML report when HTML is requested, with:
+13. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
+14. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
+15. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
+16. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
+17. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
+18. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
+19. Build conclusions from evidence, not from unstated assumptions.
+20. Output a single-file HTML report when HTML is requested, with:
    - executive summary
    - sectioned analysis
    - evidence blocks
