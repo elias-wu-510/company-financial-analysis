@@ -29,12 +29,13 @@ Analyze a listed company from official filings and produce a cited report ground
    - financing instruments such as bonds, MTNs, perpetual capital securities, green finance
 13. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
 14. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
-15. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
-16. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
-17. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
-18. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
-19. Build conclusions from evidence, not from unstated assumptions.
-20. Output a single-file HTML report when HTML is requested, with:
+15. Make charts presentation-ready. Avoid label overlap, clipped annotations, inconsistent bar or line styling, patch-like visual artifacts, or other UI issues that make the exhibit look unfinished or misleading.
+16. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
+17. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
+18. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
+19. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
+20. Build conclusions from evidence, not from unstated assumptions.
+21. Output a single-file HTML report when HTML is requested, with:
    - executive summary
    - sectioned analysis
    - evidence blocks
@@ -63,6 +64,7 @@ Analyze a listed company from official filings and produce a cited report ground
 - `assets/report_template.html` — starter HTML template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
+- `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
 
 ## Notes
 
