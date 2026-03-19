@@ -46,7 +46,6 @@ Analyze a listed company from official filings and produce a cited report ground
 
 - Read `references/asset-heavy-companies.md` when the company is transport, infrastructure, utilities, telecom, property-linked, or otherwise asset-heavy, or when EBITDA and EBIT may tell materially different stories.
 - Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
-- Check `references/cases/` for prior case-specific pitfall notes when a similar company structure, reporting pattern, or financing setup appears. Use case notes to avoid known mistakes, not as reusable answer templates.
 
 ## Output discipline
 
