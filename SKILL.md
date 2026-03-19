@@ -12,23 +12,27 @@ Analyze a listed company from official filings and produce a cited report ground
 1. Prefer official investor-relations pages, annual/interim reports, and official results announcements.
 2. Download the official PDFs when possible.
 3. Extract text from PDFs.
-4. Build a period map before analysis. State clearly whether each exhibit uses full-year, half-year, quarter, trailing-twelve-month, or point-in-time balance-sheet data.
-5. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
-6. Search for key metrics by theme:
+4. Build a year-by-year source map before analysis whenever the user asks about multiple years, a year range, or phrases such as "from 2024 to 2025", "over the last two years", or similar. For each requested year, identify the official financial documents that actually cover that year.
+5. Build a period map before analysis. State clearly whether each exhibit uses full-year, half-year, quarter, trailing-twelve-month, or point-in-time balance-sheet data.
+6. Distinguish carefully between (a) financial data for a period, (b) documents disclosed in a later calendar year, and (c) outlook, guidance, financing plans, or management commentary. Do not treat a disclosure date in a later year as financial data for that later year.
+7. If the later requested year does not yet have a full-year report, default to the latest official in-period financial report for that year, such as an interim report, quarterly report, or operating update, rather than substituting outlook language or a prior-year annual results announcement released in that later year.
+8. Before drafting conclusions, verify that each requested year is represented by real financial data. If coverage is incomplete, state the gap explicitly and narrow the claim accordingly.
+9. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
+10. Search for key metrics by theme:
    - revenue and segment mix
    - EBITDA / EBIT / profit drivers
    - gross debt / net debt / gearing / net debt-to-equity
    - cash balances / undrawn facilities
    - borrowing cost / interest cover
    - financing instruments such as bonds, MTNs, perpetual capital securities, green finance
-7. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
-8. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
-9. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
-10. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
-11. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
-12. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
-13. Build conclusions from evidence, not from unstated assumptions.
-14. Output a single-file HTML report when HTML is requested, with:
+11. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
+12. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
+13. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
+14. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
+15. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
+16. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
+17. Build conclusions from evidence, not from unstated assumptions.
+18. Output a single-file HTML report when HTML is requested, with:
    - executive summary
    - sectioned analysis
    - evidence blocks
