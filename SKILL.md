@@ -41,6 +41,12 @@ Analyze a listed company from official filings and produce a cited report ground
    - references
    - inline charts when requested
 
+## Read these references when relevant
+
+- Read `references/asset-heavy-companies.md` when the company is transport, infrastructure, utilities, telecom, property-linked, or otherwise asset-heavy, or when EBITDA and EBIT may tell materially different stories.
+- Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
+- Read `references/cases/mtr-0066-notes.md` when the company is MTR / 港鐵 / 0066, or when a rail-plus-property model, station commercial monetisation, or hybrid-capital-driven leverage optics look similar.
+
 ## Output discipline
 
 - Default to Traditional Chinese for the full deliverable unless the user explicitly requests English or a bilingual deliverable.
