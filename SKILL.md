@@ -46,6 +46,7 @@ Analyze a listed company from official filings and produce a cited report ground
 
 - Read `references/asset-heavy-companies.md` when the company is transport, infrastructure, utilities, telecom, property-linked, or otherwise asset-heavy, or when EBITDA and EBIT may tell materially different stories.
 - Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
+- Read `references/reviewer-sensitive-checklist.md` when the likely reviewer is detail-oriented, the user asks for a more defensible draft, or prior feedback criticised comparability, evidence discipline, wording precision, or formatting consistency.
 
 ## Output discipline
 
@@ -54,8 +55,60 @@ Analyze a listed company from official filings and produce a cited report ground
 - If source terminology is commonly cited in English, keep the English term in brackets on first use after the Traditional Chinese explanation.
 - Write for a reader who does not already know the company, industry, or metric set.
 - Do not place non-comparable metrics on the same chart or in the same ranking frame without an explicit warning that they are not directly comparable.
-- If the user asks about operating model, explain the business logic linking segments rather than only listing segment numbers.
+- Treat the following as non-comparable by default unless the company explicitly discloses them on a like-for-like basis: revenue, EBITDA, EBIT, recurrent EBIT, net profit, post-tax profit, distributable profit, and point-in-time balance-sheet metrics.
+- Do not use revenue, EBITDA, EBIT, recurrent EBIT, or post-tax profit in the same apparent winner-loser comparison, ranking frame, or segment superiority claim. If they must appear in the same section for explanatory purposes, add an explicit note that they serve different analytical purposes and are not directly comparable.
+- When the user asks about operating model, explain the business logic linking segments rather than only listing segment numbers.
 - If possible, add peer comparison when the goal is to explain how the company differs from its industry rather than merely describing its own trend.
+- When explaining changes in margin, EBIT, EBITDA, leverage, or earnings quality, trace the driver to the most specific disclosed cause available. Do not stop at vague phrases such as "cost pressure" or "expenses increased" when the filing discloses a more concrete driver such as staff cost, depreciation, maintenance, financing cost, lease-style payments, concession payments, or accounting reclassification.
+- For judgment-heavy claims such as "business weakened", "income mix shifted", "resilience improved", "the company relied more on local assets", or similar strategic interpretations, require nearby numeric or textual evidence. If direct support is incomplete, downgrade the wording to a qualified interpretation rather than a hard conclusion.
+- Unify units, labels, and period notation across charts, KPI cards, and tables. Do not mix styles such as bn, HK$bn, 百萬港元, 十億港元, FY, full year, H1, and 1H inconsistently within the same deliverable.
+
+## Pre-delivery execution checklist
+
+Before final delivery, execute this checklist explicitly. If any item fails, revise the affected section before delivering.
+
+1. **Source and period map**
+   - Confirm each requested year or period is covered by a real official filing.
+   - Confirm each table, chart, and KPI card is labeled with the correct period type: FY, H1, quarter, TTM, or point-in-time.
+   - Remove or qualify any exhibit that backfills missing-period figures with another period's data.
+
+2. **Comparability gate**
+   - Scan every table, chart, summary box, and conclusion for mixed metric levels.
+   - Reject any section that compares or ranks revenue, EBITDA, EBIT, recurrent EBIT, post-tax profit, or balance-sheet point-in-time metrics as if they were directly comparable.
+   - If mixed metrics remain for explanatory context, add an explicit warning that they are not directly comparable and explain why each metric is shown.
+
+3. **Evidence gate for judgment claims**
+   - For each qualitative conclusion, ask: what nearby table, numeric value, or cited text supports this exact claim?
+   - Rewrite or weaken claims that cannot be tied to nearby evidence.
+   - Prefer "may reflect", "suggests", or "can be read as" over a hard conclusion when support is partial.
+
+4. **Driver-analysis gate**
+   - For each explanation of margin, profit, leverage, or earnings change, identify the most specific disclosed driver available.
+   - If the filing identifies staff cost, depreciation, maintenance, financing cost, hybrid capital, reclassification, or another named driver, use that instead of a generic phrase.
+   - When leverage improves, verify whether the change came from debt repayment, cash build, equity increase, perpetual capital securities, or another presentation effect.
+
+5. **Reader-clarity gate**
+   - Define technical metrics in plain language on first use.
+   - Explain why the metric matters to the conclusion, not only what it means.
+   - Check that a non-specialist reader can understand the causal chain from data to conclusion.
+
+6. **Unit, language, and label consistency gate**
+   - Use one language consistently for narrative, chart labels, annotations, and table headings.
+   - Use one unit style consistently within the deliverable.
+   - Use one period-labeling style consistently within the deliverable.
+
+7. **Chart-discipline gate**
+   - Ensure each chart answers one clear question.
+   - Remove duplicate or highly overlapping charts unless each serves a distinct analytical purpose.
+   - Confirm the chart title, unit, period, and metric level are explicit.
+
+8. **Operating-model gate**
+   - If the task is about operating model, check that the report explains the linkage among traffic, monetisation, recurring income, cyclical profit, and financing structure rather than only listing segment figures.
+   - Separate recurring earnings logic from timing-sensitive development or disposal gains.
+
+9. **Final challenge**
+   - Ask: would a detail-oriented reviewer challenge this sentence, chart, or comparison for mixed periods, mixed metrics, unsupported judgment, or inconsistent labels?
+   - If yes, revise before delivery.
 
 ## Bundled resources
 
