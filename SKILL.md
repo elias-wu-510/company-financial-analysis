@@ -53,12 +53,16 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/peer-comparison.md` when the task asks how the target company differs from peers, or when peer comparison would materially improve the operating-model explanation.
 - Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
 - Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
+- Read `references/internal-to-client-delivery.md` when the task should first produce an internal checked version and then a clean customer-facing delivery version.
 - Read `references/v2-to-v3-acceptance-checklist.md` when validating whether a revised report really addresses reviewer feedback from an earlier draft.
 - Read `references/annual-report-openclaw-design-checklist.md` when the report should emphasize change, trend, peer comparison, and future positioning rather than a static description of current numbers.
 - Read `references/report-style-light-theme.md` when producing or revising deliverable HTML so the default visual style remains light, reading-friendly, and PDF-friendly.
+- Read `references/news-driver-validation.md` when using news or public reports to explain revenue change, major projects, operating recovery, or strategic shifts.
 - Read `references/source-period-map.md` when the task spans multiple years, mixed period types, or documents disclosed in a later calendar year.
 - Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
 - Read `references/chart-ui-quality.md` when the deliverable includes charts.
+- Read `references/chart-final-sanity-check.md` right before client-facing delivery when charts are present.
+- Read `references/chart-sanity-scan.md` when charts should be checked systematically rather than only by eye.
 - Read `references/chart-templates.md` when the report needs reusable chart structures such as revenue mix, recurring vs non-recurring bridges, leverage/liquidity panels, or peer-framing snapshots.
 - Read `references/cases/mtr-0066-notes.md` for 港鐵 / MTR / 0066 or similar rail-plus-property analysis tasks.
 - Read `references/cases/utilities-notes.md` for regulated or semi-regulated utility companies.
@@ -131,6 +135,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 ## Bundled resources
 
 - `scripts/extract_pdf_text.py` — extract PDF text for local analysis
+- `scripts/chart_sanity_scan.py` — simple scan for value-to-geometry consistency in HTML/SVG bar charts
 - `assets/report_template.html` — single-file HTML report starter template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
 - `references/plain-language-metrics.md` — reusable plain-language explanations for key financial metrics
@@ -160,22 +165,8 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - Prefer official primary sources over third-party summaries.
 - If search APIs are unavailable, navigate from the company IR hub manually.
 - Use external search for discovery and official sources for evidence.
+- For company-analysis tasks, treat news, announcements, and external operating updates as a default retrieval layer; include them in the report only when evidence strength and period fit are adequate.
 - Default to a light, reading-friendly visual style unless the user explicitly asks for a dark theme.
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-elecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
-- Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-rnal JS dependency.
-- For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
-- Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-atios may look better without equivalent economic deleveraging.
-eir financing role and why leverage ratios may look better without equivalent economic deleveraging.
-atios may look better without equivalent economic deleveraging.
-ent economic deleveraging.
-
-s still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-atios may look better without equivalent economic deleveraging.
-eir financing role and why leverage ratios may look better without equivalent economic deleveraging.
-atios may look better without equivalent economic deleveraging.
-ent economic deleveraging.
