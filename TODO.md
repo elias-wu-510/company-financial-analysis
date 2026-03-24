@@ -19,6 +19,7 @@
 - [x] 新增 `references/annual-report-openclaw-design-checklist.md`，把年報類交付的變化 / 趨勢 / 對比 / 未來定位要求寫成 checklist。
 - [x] 新增 `references/report-style-light-theme.md`，把淺色、閱讀友好的報告風格寫成默認視覺規則。
 - [x] 更新 `SKILL.md` workflow，明確在重大項目 / 收入驅動 / 同行對比 / 行業位置任務中使用 `web_search` 做外部發現。
+- [x] 更新 `SKILL.md` workflow，明確做公司分析時把新聞 / 公告 / 外部動態當作默認應檢索的一層，再根據證據強度與期間匹配決定是否寫入報告。
 - [x] 新增 `references/hkex-ir-retrieval.md`，把 Brave + 官方 IR + HKEX 文件檢索流程寫成可重複工作流。
 - [x] 新增公用事業 / 電訊 / 地產平台 case notes 三件套，補更多行業化分析框架。
 
