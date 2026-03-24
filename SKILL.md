@@ -122,6 +122,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `assets/report_template.html` — single-file HTML report starter template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
 - `references/source-period-map.md` — how to map disclosure date, covered period, and period type safely
+- `references/external-retrieval-strategy.md` — how to use external search for source discovery without weakening evidence quality
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
@@ -134,11 +135,15 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 
 - Prefer official primary sources over third-party summaries.
 - If search APIs are unavailable, navigate from the company IR hub manually.
+- Use external search for discovery and official sources for evidence.
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
+- Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+ty, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
  and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
 nomic deleveraging.
 os may look better without equivalent economic deleveraging.
  and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+os may look better without equivalent economic deleveraging.
 os may look better without equivalent economic deleveraging.

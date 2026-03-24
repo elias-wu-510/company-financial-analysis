@@ -10,13 +10,16 @@
 - [x] 新增 `scripts/build_source_period_map.py` 與 `references/source-period-map.md`，補上來源 / 年份 / 期別 mapping guardrail。
 - [x] 新增 `scripts/check_metric_comparability.py`，補上混口徑與混期別檢查。
 - [x] 新增 `scripts/normalize_units_and_labels.py`，補上單位 / 期別 / 標籤的 first-pass 標準化。
+- [x] 新增 `references/delivery-loop.md`，把自查→改進→自查→改進→交付的閉環寫進 skill。
+- [x] 新增 `references/v2-to-v3-acceptance-checklist.md`，把 reviewer feedback 驗收轉成可執行清單。
+- [x] 新增 `references/external-retrieval-strategy.md`，把 Brave / 外部檢索納入官方來源優先的搜索流程。
 
 ## 待改進
 
 ### P0
-- [ ] 為 `extract_pdf_text.py` 增加頁碼 / 分段標記，方便引用鏈更穩。
-- [ ] 補一個「來源-年份-期別 mapping」的小工具或模板，降低誤標年份風險。
-- [ ] 補一個 chart comparability 自查模板，讓混口徑更不容易漏掉。
+- [x] 為 `extract_pdf_text.py` 增加頁碼 / 分段標記，方便引用鏈更穩。
+- [x] 補一個「來源-年份-期別 mapping」的小工具或模板，降低誤標年份風險。
+- [x] 補一個 chart comparability 自查模板，讓混口徑更不容易漏掉。
 
 ### P1
 - [ ] 為更多公司 / 行業補 case notes（例如公用事業、電訊、地產平台）。
@@ -29,6 +32,4 @@
 - [ ] 補更多 sector-specific metric keywords。
 - [ ] 補常用 inline SVG 圖表模板。
 - [ ] 視需要增加正式 `.skill` 打包與驗證流程輸出。
-ific metric keywords。
-- [ ] 補常用 inline SVG 圖表模板。
-- [ ] 視需要增加正式 `.skill` 打包與驗證流程輸出。
+- [ ] 視使用情況補充更細的 Brave / 金融檢索 query pattern 範例。
