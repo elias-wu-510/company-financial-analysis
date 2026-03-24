@@ -139,6 +139,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/hkex-ir-retrieval.md` — Brave + official IR + HKEX workflow for Hong Kong-listed company retrieval
 - `references/peer-comparison.md` — lightweight framework for meaningful peer comparison
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
+- `references/internal-to-client-delivery.md` — workflow for separating internal checked versions from clean client-facing deliverables
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/annual-report-openclaw-design-checklist.md` — design checklist for annual-report-style deliverables focused on change, trend, comparison, and future position
 - `references/report-style-light-theme.md` — default light-theme visual guidance for deliverable reports
@@ -167,3 +168,4 @@ rnal JS dependency.
 atios may look better without equivalent economic deleveraging.
 eir financing role and why leverage ratios may look better without equivalent economic deleveraging.
 atios may look better without equivalent economic deleveraging.
+ent economic deleveraging.
