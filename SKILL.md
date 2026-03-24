@@ -47,6 +47,11 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/asset-heavy-companies.md` when the company is transport, infrastructure, utilities, telecom, property-linked, or otherwise asset-heavy, or when EBITDA and EBIT may tell materially different stories.
 - Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
 - Read `references/reviewer-sensitive-checklist.md` when the likely reviewer is detail-oriented, the user asks for a more defensible draft, or prior feedback criticised comparability, evidence discipline, wording precision, or formatting consistency.
+- Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
+- Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
+- Read `references/chart-ui-quality.md` when the deliverable includes charts.
+- Read `references/cases/mtr-0066-notes.md` for 港鐵 / MTR / 0066 or similar rail-plus-property analysis tasks.
+- Read `references/improvement-priority-checklist.md` when iterating the skill after review feedback or when planning the next improvement batch.
 
 ## Output discipline
 
@@ -113,10 +118,14 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 ## Bundled resources
 
 - `scripts/extract_pdf_text.py` — extract PDF text for local analysis
-- `assets/report_template.html` — starter HTML template
+- `assets/report_template.html` — single-file HTML report starter template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
+- `references/source-period-map.md` — how to map disclosure date, covered period, and period type safely
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
 - `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
+- `references/html-report-structure.md` — delivery-oriented HTML report section order and evidence-block pattern
+- `references/improvement-priority-checklist.md` — prioritised skill iteration checklist after report feedback
+- `references/cases/mtr-0066-notes.md` — MTR-specific pitfalls and framing guidance
 
 ## Notes
 
@@ -125,3 +134,4 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+ and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.

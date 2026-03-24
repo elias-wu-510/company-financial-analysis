@@ -1,12 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #5b6475;
+      --line: #d9e0ea;
+      --accent: #2157d5;
+      --accent-soft: #eaf1ff;
+      --good: #0f8a5f;
+      --warn: #a15c00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .report {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    .hero {
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    h1 { font-size: 34px; line-height: 1.2; margin-top: 14px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 17px; }
+    p { margin: 0 0 12px; }
+    .meta {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+    .span-12 { grid-column: span 12; }
+    .span-8 { grid-column: span 8; }
+    .span-6 { grid-column: span 6; }
+    .span-4 { grid-column: span 4; }
+    .card {
+      padding: 22px 24px;
+    }
+    .kpi {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .muted { color: var(--muted); }
+    .note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--warn);
+      background: #fff8ec;
+      color: #6c4a00;
+      border-radius: 8px;
+    }
+    .good {
+      color: var(--good);
+      font-weight: 700;
+    }
+    ul { margin: 0; padding-left: 20px; }
+    li + li { margin-top: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 13px;
+      background: #fbfcfe;
+    }
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .references li {
+      word-break: break-word;
+    }
+    @media (max-width: 900px) {
+      body { padding: 18px; }
+      .span-8, .span-6, .span-4 { grid-column: span 12; }
+      h1 { font-size: 28px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>{{ title }}</h1>
-  <p>{{ summary }}</p>
+  <div class="report">
+    <section class="hero">
+      <div class="eyebrow">Company Analysis</div>
+      <h1>{{ title }}</h1>
+      <p>{{ summary }}</p>
+      <div class="meta">公司：{{ company_name }}｜代號：{{ ticker }}｜幣種：{{ currency }}｜覆蓋期：{{ period_scope }}</div>
+      <div class="meta">資料來源：{{ source_scope }}</div>
+    </section>
+
+    <div class="grid">
+      <section class="card span-4">
+        <h3>核心結論</h3>
+        <div class="kpi">{{ key_takeaway }}</div>
+        <p class="muted">{{ key_takeaway_note }}</p>
+      </section>
+
+      <section class="card span-4">
+        <h3>主要驅動</h3>
+        <div class="kpi">{{ primary_driver }}</div>
+        <p class="muted">{{ primary_driver_note }}</p>
+      </section>
+
+      <section class="card span-4">
+        <h3>主要風險 / 限制</h3>
+        <div class="kpi">{{ main_risk }}</div>
+        <p class="muted">{{ main_risk_note }}</p>
+      </section>
+
+      <section class="card span-12">
+        <div class="section-title">
+          <h2>執行摘要</h2>
+          <span class="muted">{{ summary_period_label }}</span>
+        </div>
+        <p>{{ executive_summary }}</p>
+        <div class="note">{{ comparability_note }}</div>
+      </section>
+
+      <section class="card span-6">
+        <h2>營運模式</h2>
+        <p>{{ operating_model_text }}</p>
+      </section>
+
+      <section class="card span-6">
+        <h2>盈利與驅動因素</h2>
+        <p>{{ profitability_driver_text }}</p>
+      </section>
+
+      <section class="card span-12">
+        <h2>證據區塊</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>主張</th>
+              <th>支持數據</th>
+              <th>來源 / 期別</th>
+              <th>意義</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ evidence_rows }}
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card span-12">
+        <h2>參考資料</h2>
+        <ul class="references">
+          {{ reference_items }}
+        </ul>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
