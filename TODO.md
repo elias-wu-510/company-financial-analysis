@@ -9,6 +9,7 @@
 - [x] 新增 `scripts/extract_pdf_text_with_pages.py`，補上頁碼級引用鏈前處理。
 - [x] 新增 `scripts/build_source_period_map.py` 與 `references/source-period-map.md`，補上來源 / 年份 / 期別 mapping guardrail。
 - [x] 新增 `scripts/check_metric_comparability.py`，補上混口徑與混期別檢查。
+- [x] 新增 `scripts/normalize_units_and_labels.py`，補上單位 / 期別 / 標籤的 first-pass 標準化。
 
 ## 待改進
 
@@ -21,6 +22,7 @@
 - [ ] 為更多公司 / 行業補 case notes（例如公用事業、電訊、地產平台）。
 - [ ] 加入 peer comparison 的具體輸出骨架與最小比較維度。
 - [ ] 增加技術指標白話化範例片段，讓非專業讀者更易讀。
+- [x] 補 `normalize_units_and_labels.py`，統一單位 / 期別 / 標籤語言。
 
 ### P2
 - [ ] 補更多 sector-specific metric keywords。

@@ -48,6 +48,7 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
 - Read `references/reviewer-sensitive-checklist.md` when the likely reviewer is detail-oriented, the user asks for a more defensible draft, or prior feedback criticised comparability, evidence discipline, wording precision, or formatting consistency.
 - Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
+- Read `references/source-period-map.md` when the task spans multiple years, mixed period types, or documents disclosed in a later calendar year.
 - Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
 - Read `references/chart-ui-quality.md` when the deliverable includes charts.
 - Read `references/cases/mtr-0066-notes.md` for 港鐵 / MTR / 0066 or similar rail-plus-property analysis tasks.
@@ -66,7 +67,7 @@ Analyze a listed company from official filings and produce a cited report ground
 - If possible, add peer comparison when the goal is to explain how the company differs from its industry rather than merely describing its own trend.
 - When explaining changes in margin, EBIT, EBITDA, leverage, or earnings quality, trace the driver to the most specific disclosed cause available. Do not stop at vague phrases such as "cost pressure" or "expenses increased" when the filing discloses a more concrete driver such as staff cost, depreciation, maintenance, financing cost, lease-style payments, concession payments, or accounting reclassification.
 - For judgment-heavy claims such as "business weakened", "income mix shifted", "resilience improved", "the company relied more on local assets", or similar strategic interpretations, require nearby numeric or textual evidence. If direct support is incomplete, downgrade the wording to a qualified interpretation rather than a hard conclusion.
-- Unify units, labels, and period notation across charts, KPI cards, and tables. Do not mix styles such as bn, HK$bn, 百萬港元, 十億港元, FY, full year, H1, and 1H inconsistently within the same deliverable.
+- Unify units, labels, and period notation across charts, KPI cards, and tables. Do not mix styles such as bn, HK$bn, 百萬港元, 十億港元, FY, full year, H1, and 1H inconsistently within the same deliverable. Use `scripts/normalize_units_and_labels.py` for a first-pass normalization when useful.
 
 ## Pre-delivery execution checklist
 
@@ -134,4 +135,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+ and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+nomic deleveraging.
+os may look better without equivalent economic deleveraging.
  and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
