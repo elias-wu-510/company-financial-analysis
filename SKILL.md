@@ -54,10 +54,15 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
 - Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
 - Read `references/v2-to-v3-acceptance-checklist.md` when validating whether a revised report really addresses reviewer feedback from an earlier draft.
+- Read `references/annual-report-openclaw-design-checklist.md` when the report should emphasize change, trend, peer comparison, and future positioning rather than a static description of current numbers.
 - Read `references/source-period-map.md` when the task spans multiple years, mixed period types, or documents disclosed in a later calendar year.
 - Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
 - Read `references/chart-ui-quality.md` when the deliverable includes charts.
+- Read `references/chart-templates.md` when the report needs reusable chart structures such as revenue mix, recurring vs non-recurring bridges, leverage/liquidity panels, or peer-framing snapshots.
 - Read `references/cases/mtr-0066-notes.md` for 港鐵 / MTR / 0066 or similar rail-plus-property analysis tasks.
+- Read `references/cases/utilities-notes.md` for regulated or semi-regulated utility companies.
+- Read `references/cases/telecom-notes.md` for telecom, tower, broadband, or network-heavy communications businesses.
+- Read `references/cases/property-platform-notes.md` for landlord-developer hybrids, rail-plus-property models, or other property-linked platforms.
 - Read `references/improvement-priority-checklist.md` when iterating the skill after review feedback or when planning the next improvement batch.
 
 ## Output discipline
