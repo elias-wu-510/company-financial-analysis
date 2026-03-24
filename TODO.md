@@ -13,6 +13,8 @@
 - [x] 新增 `references/delivery-loop.md`，把自查→改進→自查→改進→交付的閉環寫進 skill。
 - [x] 新增 `references/v2-to-v3-acceptance-checklist.md`，把 reviewer feedback 驗收轉成可執行清單。
 - [x] 新增 `references/external-retrieval-strategy.md`，把 Brave / 外部檢索納入官方來源優先的搜索流程。
+- [x] 新增 `references/peer-comparison.md`，把同業比較變成可直接套用的分析骨架。
+- [x] 新增 `references/plain-language-metrics.md`，補上面向普通讀者的核心指標白話模板。
 
 ## 待改進
 
@@ -23,8 +25,8 @@
 
 ### P1
 - [ ] 為更多公司 / 行業補 case notes（例如公用事業、電訊、地產平台）。
-- [ ] 加入 peer comparison 的具體輸出骨架與最小比較維度。
-- [ ] 增加技術指標白話化範例片段，讓非專業讀者更易讀。
+- [x] 加入 peer comparison 的具體輸出骨架與最小比較維度。
+- [x] 增加技術指標白話化範例片段，讓非專業讀者更易讀。
 - [x] 補 `normalize_units_and_labels.py`，統一單位 / 期別 / 標籤語言。
 - [x] 補交付閉環與 v2→v3 驗收清單，讓報告可按 loop 反覆修訂後交付。
 

@@ -46,8 +46,13 @@ Analyze a listed company from official filings and produce a cited report ground
 
 - Read `references/asset-heavy-companies.md` when the company is transport, infrastructure, utilities, telecom, property-linked, or otherwise asset-heavy, or when EBITDA and EBIT may tell materially different stories.
 - Read `references/driver-analysis.md` when the task requires explaining why revenue, margin, leverage, or segment mix changed rather than merely describing the change.
+- Read `references/plain-language-metrics.md` when the report should work for non-specialist readers and key metrics need clear plain-language explanation.
 - Read `references/reviewer-sensitive-checklist.md` when the likely reviewer is detail-oriented, the user asks for a more defensible draft, or prior feedback criticised comparability, evidence discipline, wording precision, or formatting consistency.
+- Read `references/external-retrieval-strategy.md` when the task needs broader source coverage, official IR discovery, results announcements, HKEX disclosures, or peer-company source discovery.
+- Read `references/peer-comparison.md` when the task asks how the target company differs from peers, or when peer comparison would materially improve the operating-model explanation.
 - Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
+- Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
+- Read `references/v2-to-v3-acceptance-checklist.md` when validating whether a revised report really addresses reviewer feedback from an earlier draft.
 - Read `references/source-period-map.md` when the task spans multiple years, mixed period types, or documents disclosed in a later calendar year.
 - Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
 - Read `references/chart-ui-quality.md` when the deliverable includes charts.
@@ -121,8 +126,10 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `scripts/extract_pdf_text.py` — extract PDF text for local analysis
 - `assets/report_template.html` — single-file HTML report starter template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
+- `references/plain-language-metrics.md` — reusable plain-language explanations for key financial metrics
 - `references/source-period-map.md` — how to map disclosure date, covered period, and period type safely
 - `references/external-retrieval-strategy.md` — how to use external search for source discovery without weakening evidence quality
+- `references/peer-comparison.md` — lightweight framework for meaningful peer comparison
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
