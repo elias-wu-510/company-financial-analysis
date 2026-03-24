@@ -11,16 +11,21 @@
 - [x] 新增 `scripts/check_metric_comparability.py`，補上混口徑與混期別檢查。
 - [x] 新增 `scripts/normalize_units_and_labels.py`，補上單位 / 期別 / 標籤的 first-pass 標準化。
 - [x] 新增 `references/delivery-loop.md`，把自查→改進→自查→改進→交付的閉環寫進 skill。
+- [x] 新增 `references/internal-to-client-delivery.md`，把「先內部版，再客戶交付版」寫成正式工作流。
 - [x] 新增 `references/v2-to-v3-acceptance-checklist.md`，把 reviewer feedback 驗收轉成可執行清單。
 - [x] 新增 `references/external-retrieval-strategy.md`，把 Brave / 外部檢索納入官方來源優先的搜索流程。
+- [x] 新增 `references/hkex-ir-retrieval.md`，把 Brave + 官方 IR + HKEX 文件檢索流程寫成可重複工作流。
+- [x] 更新 `SKILL.md` workflow，明確做公司分析時把新聞 / 公告 / 外部動態當作默認應檢索的一層，再根據證據強度與期間匹配決定是否寫入報告。
+- [x] 新增 `references/news-driver-validation.md`，把新聞線補強與日期 / 期間映射驗證寫成工作流。
+- [x] 新增 `references/report-style-light-theme.md`，把淺色、閱讀友好的報告風格寫成默認視覺規則。
 - [x] 新增 `references/peer-comparison.md`，把同業比較變成可直接套用的分析骨架。
+- [x] 新增 `references/peer-research-subagent-workflow.md`，把 peer research 交給 subagent、主 agent 專注主報告整合寫成正式工作流。
 - [x] 新增 `references/plain-language-metrics.md`，補上面向普通讀者的核心指標白話模板。
 - [x] 新增 `references/chart-templates.md`，把常用財務分析圖表骨架標準化。
+- [x] 新增 `references/chart-final-sanity-check.md`，把客戶交付前的修圖 / 圖表最終審校寫成明確步驟。
+- [x] 新增 `references/chart-sanity-scan.md` 與 `scripts/chart_sanity_scan.py`，把圖表數值-視覺一致性的半自動掃描能力補進 skill。
+- [x] 更新 workflow，明確 client-delivery 版在發送前默認先跑一次 `chart_sanity_scan`。
 - [x] 新增 `references/annual-report-openclaw-design-checklist.md`，把年報類交付的變化 / 趨勢 / 對比 / 未來定位要求寫成 checklist。
-- [x] 新增 `references/report-style-light-theme.md`，把淺色、閱讀友好的報告風格寫成默認視覺規則。
-- [x] 更新 `SKILL.md` workflow，明確在重大項目 / 收入驅動 / 同行對比 / 行業位置任務中使用 `web_search` 做外部發現。
-- [x] 更新 `SKILL.md` workflow，明確做公司分析時把新聞 / 公告 / 外部動態當作默認應檢索的一層，再根據證據強度與期間匹配決定是否寫入報告。
-- [x] 新增 `references/hkex-ir-retrieval.md`，把 Brave + 官方 IR + HKEX 文件檢索流程寫成可重複工作流。
 - [x] 新增公用事業 / 電訊 / 地產平台 case notes 三件套，補更多行業化分析框架。
 
 ## 待改進
@@ -47,6 +52,3 @@
 - [ ] 視需要把 client-delivery 版再細化成簡報型 / 長報告型兩套模板。
 - [ ] 視需要把新聞事件映射再做成可複用的資料層模板。
 - [ ] 視需要把 chart sanity scan 擴展到 line / area / stacked charts。
-用的資料層模板。
-- [ ] 視需要把 chart sanity scan 擴展到 line / area / stacked charts。
-- [ ] 視需要把新聞事件映射再做成可複用的資料層模板。

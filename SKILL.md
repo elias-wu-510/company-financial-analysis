@@ -144,6 +144,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/external-retrieval-strategy.md` — how to use external search for source discovery without weakening evidence quality
 - `references/hkex-ir-retrieval.md` — Brave + official IR + HKEX workflow for Hong Kong-listed company retrieval
 - `references/peer-comparison.md` — lightweight framework for meaningful peer comparison
+- `references/peer-research-subagent-workflow.md` — split peer research into subagent output plus main-agent integration
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/internal-to-client-delivery.md` — workflow for separating internal checked versions from clean client-facing deliverables
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
@@ -171,3 +172,4 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+ers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
