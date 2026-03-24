@@ -130,6 +130,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/plain-language-metrics.md` — reusable plain-language explanations for key financial metrics
 - `references/source-period-map.md` — how to map disclosure date, covered period, and period type safely
 - `references/external-retrieval-strategy.md` — how to use external search for source discovery without weakening evidence quality
+- `references/hkex-ir-retrieval.md` — Brave + official IR + HKEX workflow for Hong Kong-listed company retrieval
 - `references/peer-comparison.md` — lightweight framework for meaningful peer comparison
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
@@ -138,6 +139,9 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/html-report-structure.md` — delivery-oriented HTML report section order and evidence-block pattern
 - `references/improvement-priority-checklist.md` — prioritised skill iteration checklist after report feedback
 - `references/cases/mtr-0066-notes.md` — MTR-specific pitfalls and framing guidance
+- `references/cases/utilities-notes.md` — pitfalls and framing for utility companies
+- `references/cases/telecom-notes.md` — pitfalls and framing for telecom and network-heavy businesses
+- `references/cases/property-platform-notes.md` — pitfalls and framing for property-linked platform businesses
 
 ## Notes
 
@@ -147,11 +151,3 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-ty, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
-- Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
- and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-nomic deleveraging.
-os may look better without equivalent economic deleveraging.
- and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-os may look better without equivalent economic deleveraging.
-os may look better without equivalent economic deleveraging.
