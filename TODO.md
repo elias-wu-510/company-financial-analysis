@@ -47,4 +47,6 @@
 - [ ] 視需要把 client-delivery 版再細化成簡報型 / 長報告型兩套模板。
 - [ ] 視需要把新聞事件映射再做成可複用的資料層模板。
 - [ ] 視需要把 chart sanity scan 擴展到 line / area / stacked charts。
+用的資料層模板。
+- [ ] 視需要把 chart sanity scan 擴展到 line / area / stacked charts。
 - [ ] 視需要把新聞事件映射再做成可複用的資料層模板。

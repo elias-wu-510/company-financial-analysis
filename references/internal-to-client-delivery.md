@@ -65,7 +65,8 @@ Client delivery version should keep:
 3. Fix high-priority issues
 4. Freeze analytical conclusions
 5. Produce a separate client delivery version
-6. Export / send only the client version unless the user also wants the internal package
+6. If charts are present, run `scripts/chart_sanity_scan.py` on the client-delivery HTML and review any warnings before export / sending
+7. Export / send only the client version unless the user also wants the internal package
 
 ## Delivery package rule
 

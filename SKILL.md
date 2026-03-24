@@ -41,6 +41,7 @@ Analyze a listed company from official filings and produce a cited report ground
    - evidence blocks
    - references
    - inline charts when requested
+23. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
 
 ## Read these references when relevant
 
