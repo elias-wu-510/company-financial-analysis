@@ -16,6 +16,7 @@
 - [x] 新增 `references/external-retrieval-strategy.md`，把 Brave / 外部檢索納入官方來源優先的搜索流程。
 - [x] 新增 `references/hkex-ir-retrieval.md`，把 Brave + 官方 IR + HKEX 文件檢索流程寫成可重複工作流。
 - [x] 更新 `SKILL.md` workflow，明確做公司分析時把新聞 / 公告 / 外部動態當作默認應檢索的一層，再根據證據強度與期間匹配決定是否寫入報告。
+- [x] 新增 `references/recent-news-window.md`，把最近三個月新聞 / 公告 / 更新的強制檢索寫成默認規則。
 - [x] 新增 `references/news-driver-validation.md`，把新聞線補強與日期 / 期間映射驗證寫成工作流。
 - [x] 新增 `references/report-style-light-theme.md`，把淺色、閱讀友好的報告風格寫成默認視覺規則。
 - [x] 新增 `references/peer-comparison.md`，把同業比較變成可直接套用的分析骨架。
