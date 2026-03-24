@@ -49,6 +49,7 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/plain-language-metrics.md` when the report should work for non-specialist readers and key metrics need clear plain-language explanation.
 - Read `references/reviewer-sensitive-checklist.md` when the likely reviewer is detail-oriented, the user asks for a more defensible draft, or prior feedback criticised comparability, evidence discipline, wording precision, or formatting consistency.
 - Read `references/external-retrieval-strategy.md` when the task needs broader source coverage, official IR discovery, results announcements, HKEX disclosures, or peer-company source discovery.
+- Read `references/hkex-ir-retrieval.md` when the company is Hong Kong-listed and the task needs a repeatable Brave + IR + HKEX retrieval workflow.
 - Read `references/peer-comparison.md` when the task asks how the target company differs from peers, or when peer comparison would materially improve the operating-model explanation.
 - Read `references/html-report-structure.md` when the user asks for a direct-delivery HTML report rather than notes or rough analysis.
 - Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
