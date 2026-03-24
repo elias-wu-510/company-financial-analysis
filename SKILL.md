@@ -55,6 +55,7 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
 - Read `references/v2-to-v3-acceptance-checklist.md` when validating whether a revised report really addresses reviewer feedback from an earlier draft.
 - Read `references/annual-report-openclaw-design-checklist.md` when the report should emphasize change, trend, peer comparison, and future positioning rather than a static description of current numbers.
+- Read `references/report-style-light-theme.md` when producing or revising deliverable HTML so the default visual style remains light, reading-friendly, and PDF-friendly.
 - Read `references/source-period-map.md` when the task spans multiple years, mixed period types, or documents disclosed in a later calendar year.
 - Read `references/zh-report-checklist.md` before delivering a Traditional Chinese report.
 - Read `references/chart-ui-quality.md` when the deliverable includes charts.
@@ -139,6 +140,8 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/peer-comparison.md` — lightweight framework for meaningful peer comparison
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
+- `references/annual-report-openclaw-design-checklist.md` — design checklist for annual-report-style deliverables focused on change, trend, comparison, and future position
+- `references/report-style-light-theme.md` — default light-theme visual guidance for deliverable reports
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
 - `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
 - `references/chart-templates.md` — reusable chart patterns for revenue mix, leverage, recurring vs non-recurring, and peer framing
@@ -154,10 +157,13 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - Prefer official primary sources over third-party summaries.
 - If search APIs are unavailable, navigate from the company IR hub manually.
 - Use external search for discovery and official sources for evidence.
+- Default to a light, reading-friendly visual style unless the user explicitly asks for a dark theme.
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
-inline SVG or self-contained HTML with no external JS dependency.
+rnal JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+atios may look better without equivalent economic deleveraging.
+eir financing role and why leverage ratios may look better without equivalent economic deleveraging.
 atios may look better without equivalent economic deleveraging.
