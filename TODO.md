@@ -18,6 +18,8 @@
 - [x] 更新 `SKILL.md` workflow，明確做公司分析時把新聞 / 公告 / 外部動態當作默認應檢索的一層，再根據證據強度與期間匹配決定是否寫入報告。
 - [x] 新增 `references/recent-news-window.md`，把最近三個月新聞 / 公告 / 更新的強制檢索寫成默認規則。
 - [x] 新增 `references/news-driver-validation.md`，把新聞線補強與日期 / 期間映射驗證寫成工作流。
+- [x] 新增 `references/latest-financial-statements-first.md`，把「最新官方財務報表優先、上一年報作基線」寫成默認分析原則。
+- [x] 新增 `references/revenue-growth-and-upside.md`，把「收入增長與未來增長潛力是默認重點」寫成分析原則。
 - [x] 新增 `references/report-style-light-theme.md`，把淺色、閱讀友好的報告風格寫成默認視覺規則。
 - [x] 新增 `references/peer-comparison.md`，把同業比較變成可直接套用的分析骨架。
 - [x] 新增 `references/peer-research-subagent-workflow.md`，把 peer research 交給 subagent、主 agent 專注主報告整合寫成正式工作流。

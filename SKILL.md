@@ -17,34 +17,35 @@ Analyze a listed company from official filings and produce a cited report ground
 6. Build a year-by-year source map before analysis whenever the user asks about multiple years, a year range, or phrases such as "from 2024 to 2025", "over the last two years", or similar. For each requested year, identify the official financial documents that actually cover that year.
 7. Build a period map before analysis. State clearly whether each exhibit uses full-year, half-year, quarter, trailing-twelve-month, or point-in-time balance-sheet data.
 8. Distinguish carefully between (a) financial data for a period, (b) documents disclosed in a later calendar year, and (c) outlook, guidance, financing plans, or management commentary. Do not treat a disclosure date in a later year as financial data for that later year.
-9. If the later requested year does not yet have a full-year report, default to the latest official in-period financial report for that year, such as an interim report, quarterly report, or operating update, rather than substituting outlook language or a prior-year annual results announcement released in that later year.
-10. Before drafting conclusions, verify that each requested year is represented by real financial data. If coverage is incomplete, state the gap explicitly and narrow the claim accordingly.
-11. Before finalizing any table, chart, KPI card, exhibit, or period-labelled summary, validate every numeric value against its cited source and reporting period. Do not relabel prior-period figures as current-period figures, and do not infer reporting periods from file dates or disclosure dates alone.
-12. If period-accurate figures for a requested table or chart are unavailable, incomplete, or extraction is uncertain, do not backfill the exhibit with another period’s numbers. State the gap explicitly, omit the exhibit, or downgrade it to a qualified text explanation.
-13. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
-14. Search for key metrics by theme:
+9. When the latest full-year annual report has not yet been released, default to using the latest official disclosed financial statements—such as an interim report, results announcement, press release with financial tables, or official investor presentation with clearly reported figures—as the primary basis for current analysis.
+10. In that situation, use the prior full-year annual report as baseline and structural background, not as a substitute for the latest financial period.
+11. Before drafting conclusions, verify that each requested year or period is represented by real financial data. If coverage is incomplete, state the gap explicitly and narrow the claim accordingly.
+12. Before finalizing any table, chart, KPI card, exhibit, or period-labelled summary, validate every numeric value against its cited source and reporting period. Do not relabel prior-period figures as current-period figures, and do not infer reporting periods from file dates or disclosure dates alone.
+13. If period-accurate figures for a requested table or chart are unavailable, incomplete, or extraction is uncertain, do not backfill the exhibit with another period’s numbers. State the gap explicitly, omit the exhibit, or downgrade it to a qualified text explanation.
+14. Build a segment map before charting. If company disclosures use parent buckets, sub-segments, overlapping labels, or changed classifications, explain the hierarchy first and avoid presenting them as directly parallel categories.
+15. Search for key metrics by theme:
    - revenue and segment mix
    - EBITDA / EBIT / profit drivers
    - gross debt / net debt / gearing / net debt-to-equity
    - cash balances / undrawn facilities
    - borrowing cost / interest cover
    - financing instruments such as bonds, MTNs, perpetual capital securities, green finance
-15. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
-16. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
-17. Make charts presentation-ready. Avoid label overlap, clipped annotations, inconsistent bar or line styling, patch-like visual artifacts, or other UI issues that make the exhibit look unfinished or misleading.
-18. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
-19. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
-20. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
-21. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
-22. When peer comparison or industry positioning requires substantial multi-company research, delegate the peer-research layer to a subagent and have it return a short peer note; keep the main agent focused on the target company report and final integration.
-23. Build conclusions from evidence, not from unstated assumptions.
-24. Output a single-file HTML report when HTML is requested, with:
+16. Compare only like-for-like periods and like-for-like metrics unless the purpose is explicitly explanatory rather than comparative.
+17. Enforce chart discipline. Do not place non-comparable metrics in the same chart, ranking frame, or apparent winner-loser comparison and then rank, judge, or declare one segment superior. If non-comparable metrics must appear together for explanatory context, label the limitation explicitly.
+18. Make charts presentation-ready. Avoid label overlap, clipped annotations, inconsistent bar or line styling, patch-like visual artifacts, or other UI issues that make the exhibit look unfinished or misleading.
+19. When margins, profit, or leverage change, trace the driver from the filings. Distinguish among revenue mix, operating cost, staff cost, depreciation and amortization, concession or lease-style payments, financing cost, equity increase, hybrid/perpetual instruments, and accounting reclassification.
+20. When leverage appears to improve, verify whether the change came from actual debt repayment, cash accumulation, equity issuance, perpetual or hybrid capital instruments, or presentation effects. Explain the accounting treatment and economic substance when they differ.
+21. Define technical metrics in plain language on first use, especially for non-specialist readers. Explain not only what the metric means, but why it is relevant to the conclusion.
+22. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
+23. When peer comparison or industry positioning requires substantial multi-company research, delegate the peer-research layer to a subagent and have it return a short peer note; keep the main agent focused on the target company report and final integration.
+24. Build conclusions from evidence, not from unstated assumptions.
+25. Output a single-file HTML report when HTML is requested, with:
    - executive summary
    - sectioned analysis
    - evidence blocks
    - references
    - inline charts when requested
-25. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
+26. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
 
 ## Read these references when relevant
 
@@ -152,9 +153,11 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/internal-to-client-delivery.md` — workflow for separating internal checked versions from clean client-facing deliverables
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/annual-report-openclaw-design-checklist.md` — design checklist for annual-report-style deliverables focused on change, trend, comparison, and future position
+- `references/revenue-growth-and-upside.md` — default emphasis on current revenue growth and future growth potential
 - `references/report-style-light-theme.md` — default light-theme visual guidance for deliverable reports
 - `references/recent-news-window.md` — mandatory recent-three-month news / announcement retrieval rule for company analysis
 - `references/news-driver-validation.md` — how to use news/public reporting for driver explanation without distorting period logic
+- `references/latest-financial-statements-first.md` — use the latest official financial statements as the current-analysis base when no newer annual report exists
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
 - `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
 - `references/chart-final-sanity-check.md` — last-mile chart accuracy checks before client-facing delivery
@@ -178,3 +181,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
 ers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
 valent economic deleveraging.
+veraging.
+c deleveraging.
+valent economic deleveraging.
+veraging.
