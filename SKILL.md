@@ -136,6 +136,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
 - `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
+- `references/chart-templates.md` — reusable chart patterns for revenue mix, leverage, recurring vs non-recurring, and peer framing
 - `references/html-report-structure.md` — delivery-oriented HTML report section order and evidence-block pattern
 - `references/improvement-priority-checklist.md` — prioritised skill iteration checklist after report feedback
 - `references/cases/mtr-0066-notes.md` — MTR-specific pitfalls and framing guidance
@@ -151,3 +152,7 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+inline SVG or self-contained HTML with no external JS dependency.
+- For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
+- Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+atios may look better without equivalent economic deleveraging.

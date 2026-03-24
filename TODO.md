@@ -32,8 +32,7 @@
 
 ### P2
 - [ ] 補更多 sector-specific metric keywords。
-- [ ] 補常用 inline SVG 圖表模板。
+- [x] 補常用 inline SVG / 圖表骨架模板。
 - [ ] 視需要增加正式 `.skill` 打包與驗證流程輸出。
 - [ ] 視使用情況補充更細的 Brave / 金融檢索 query pattern 範例。
 - [ ] 視需要補一個 lightweight HKEX 文件抓取腳本雛形。
-��細的 Brave / 金融檢索 query pattern 範例。
