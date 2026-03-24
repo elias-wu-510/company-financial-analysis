@@ -23,8 +23,12 @@
 - [ ] 加入 peer comparison 的具體輸出骨架與最小比較維度。
 - [ ] 增加技術指標白話化範例片段，讓非專業讀者更易讀。
 - [x] 補 `normalize_units_and_labels.py`，統一單位 / 期別 / 標籤語言。
+- [x] 補交付閉環與 v2→v3 驗收清單，讓報告可按 loop 反覆修訂後交付。
 
 ### P2
 - [ ] 補更多 sector-specific metric keywords。
+- [ ] 補常用 inline SVG 圖表模板。
+- [ ] 視需要增加正式 `.skill` 打包與驗證流程輸出。
+ific metric keywords。
 - [ ] 補常用 inline SVG 圖表模板。
 - [ ] 視需要增加正式 `.skill` 打包與驗證流程輸出。

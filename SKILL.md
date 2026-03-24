@@ -122,6 +122,8 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `assets/report_template.html` — single-file HTML report starter template
 - `references/metric-keywords.md` — reusable keyword patterns for IR documents
 - `references/source-period-map.md` — how to map disclosure date, covered period, and period type safely
+- `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
+- `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
 - `references/zh-report-checklist.md` — Traditional Chinese pre-delivery checklist for report quality control
 - `references/chart-ui-quality.md` — chart presentation and UI consistency checks for deliverable-quality HTML exhibits
 - `references/html-report-structure.md` — delivery-oriented HTML report section order and evidence-block pattern
@@ -139,3 +141,4 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 nomic deleveraging.
 os may look better without equivalent economic deleveraging.
  and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+os may look better without equivalent economic deleveraging.
