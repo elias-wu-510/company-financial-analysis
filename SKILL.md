@@ -39,13 +39,16 @@ Analyze a listed company from official filings and produce a cited report ground
 22. When the user asks about operating-model differences, company distinctiveness, competitive positioning, or relative strengths and weaknesses, consider peer comparison by default if time and source availability permit.
 23. When peer comparison or industry positioning requires substantial multi-company research, delegate the peer-research layer to a subagent and have it return a short peer note; keep the main agent focused on the target company report and final integration.
 24. Build conclusions from evidence, not from unstated assumptions.
-25. Output a single-file HTML report when HTML is requested, with:
+25. Decide the delivery level before drafting: Level 1 (baseline deliverable), Level 2 (enhanced), or Level 3 (deep research). Default to Level 1 unless the user explicitly asks for more depth or the time/source budget clearly supports it.
+26. If the deliverable includes a financial overview, KPI panel, or metrics dashboard, validate it against `references/financial-dashboard-minimum.md`. If the panel is incomplete, state the gap explicitly rather than silently presenting it as a full dashboard.
+27. If the deliverable is a Traditional Chinese client-facing report, run one final pass against `references/final-cn-delivery-checklist.md` so the output reads like a finished Chinese report rather than a half-localized analysis draft.
+28. Output a single-file HTML report when HTML is requested, with:
    - executive summary
    - sectioned analysis
    - evidence blocks
    - references
    - inline charts when requested
-26. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
+29. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
 
 ## Read these references when relevant
 
@@ -60,6 +63,9 @@ Analyze a listed company from official filings and produce a cited report ground
 - Read `references/delivery-loop.md` when the task is a deliverable report and the workflow should include self-check → revise → self-check → revise → deliver.
 - Read `references/internal-to-client-delivery.md` when the task should first produce an internal checked version and then a clean customer-facing delivery version.
 - Read `references/v2-to-v3-acceptance-checklist.md` when validating whether a revised report really addresses reviewer feedback from an earlier draft.
+- Read `references/delivery-levels.md` when the task boundary is ambiguous, when deciding whether to stop at a baseline deliverable or push into an enhanced/deep-research version, or when a reviewer is likely to judge a Level 1 draft by Level 2 or Level 3 standards.
+- Read `references/financial-dashboard-minimum.md` when the deliverable includes a financial overview, KPI panel, detailed metrics page, or reviewer-sensitive dashboard completeness check.
+- Read `references/final-cn-delivery-checklist.md` before delivering a Traditional Chinese client-facing report that must feel like a finished final draft rather than an analysis memo.
 - Read `references/annual-report-openclaw-design-checklist.md` when the report should emphasize change, trend, peer comparison, and future positioning rather than a static description of current numbers.
 - Read `references/report-style-light-theme.md` when producing or revising deliverable HTML so the default visual style remains light, reading-friendly, and PDF-friendly.
 - Read `references/news-driver-validation.md` when using news or public reports to explain revenue change, major projects, operating recovery, or strategic shifts.
@@ -80,6 +86,10 @@ Analyze a listed company from official filings and produce a cited report ground
 - Default to Traditional Chinese for the full deliverable unless the user explicitly requests English or a bilingual deliverable.
 - Keep the report in one language. Do not mix Simplified Chinese, Traditional Chinese, and English narrative in the same deliverable.
 - If source terminology is commonly cited in English, keep the English term in brackets on first use after the Traditional Chinese explanation.
+- For Traditional Chinese client-facing delivery, localize page titles, section headings, KPI labels, chart titles, and annotations as far as practical; do not leave the page looking like a partially translated analyst workpaper.
+- Avoid draft-like page labels such as "company analysis", "FY2025 analysis", "FY2024 baseline", "notes", or similar packaging language in the final deliverable unless the user explicitly wants an internal memo style.
+- If English abbreviations remain necessary, avoid clustering too many of them in the same sentence or heading; prefer a Chinese lead term with the English term or abbreviation in brackets on first use.
+- When a page is presented as a detailed metrics overview or dashboard, do not treat a small subset of metrics as if it were a complete panel; either meet the minimum dashboard standard or state clearly that the panel is partial.
 - Write for a reader who does not already know the company, industry, or metric set.
 - Do not place non-comparable metrics on the same chart or in the same ranking frame without an explicit warning that they are not directly comparable.
 - Treat the following as non-comparable by default unless the company explicitly discloses them on a like-for-like basis: revenue, EBITDA, EBIT, recurrent EBIT, net profit, post-tax profit, distributable profit, and point-in-time balance-sheet metrics.
@@ -119,22 +129,27 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
    - Explain why the metric matters to the conclusion, not only what it means.
    - Check that a non-specialist reader can understand the causal chain from data to conclusion.
 
-6. **Unit, language, and label consistency gate**
+6. **Dashboard completeness gate**
+   - If the deliverable contains a financial overview, KPI page, or metrics dashboard, check it against `references/financial-dashboard-minimum.md`.
+   - If the panel is incomplete, state the missing metrics and why they are absent instead of silently implying completeness.
+   - Do not claim a dashboard is "detailed" or "complete" unless it broadly meets the minimum panel standard.
+
+7. **Unit, language, and label consistency gate**
    - Use one language consistently for narrative, chart labels, annotations, and table headings.
    - Use one unit style consistently within the deliverable.
    - Use one period-labeling style consistently within the deliverable.
 
-7. **Chart-discipline gate**
+8. **Chart-discipline gate**
    - Ensure each chart answers one clear question.
    - Remove duplicate or highly overlapping charts unless each serves a distinct analytical purpose.
    - Confirm the chart title, unit, period, and metric level are explicit.
 
-8. **Operating-model gate**
+9. **Operating-model gate**
    - If the task is about operating model, check that the report explains the linkage among traffic, monetisation, recurring income, cyclical profit, and financing structure rather than only listing segment figures.
    - Separate recurring earnings logic from timing-sensitive development or disposal gains.
 
-9. **Final challenge**
-   - Ask: would a detail-oriented reviewer challenge this sentence, chart, or comparison for mixed periods, mixed metrics, unsupported judgment, or inconsistent labels?
+10. **Final challenge**
+   - Ask: would a detail-oriented reviewer challenge this sentence, chart, comparison, dashboard title, or page heading for mixed periods, mixed metrics, unsupported judgment, incomplete metric coverage, draft-like language, or inconsistent labels?
    - If yes, revise before delivery.
 
 ## Bundled resources
@@ -152,6 +167,9 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - `references/delivery-loop.md` — self-check → revise → self-check → revise → deliver workflow
 - `references/internal-to-client-delivery.md` — workflow for separating internal checked versions from clean client-facing deliverables
 - `references/v2-to-v3-acceptance-checklist.md` — acceptance checklist for validating whether a revised report actually addresses prior review comments
+- `references/delivery-levels.md` — define whether the task is a baseline deliverable, enhanced version, or deep-research version
+- `references/financial-dashboard-minimum.md` — minimum completeness standard for metrics overview, KPI panel, or dashboard pages
+- `references/final-cn-delivery-checklist.md` — final Traditional Chinese delivery polish checklist for headings, labels, terminology, and tone
 - `references/annual-report-openclaw-design-checklist.md` — design checklist for annual-report-style deliverables focused on change, trend, comparison, and future position
 - `references/revenue-growth-and-upside.md` — default emphasis on current revenue growth and future growth potential
 - `references/report-style-light-theme.md` — default light-theme visual guidance for deliverable reports
