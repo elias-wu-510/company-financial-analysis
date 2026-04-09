@@ -31,6 +31,7 @@ For MTR tasks phrased as "2024 to 2025":
 - do not use a 2025 disclosure date as if it were 2025 financial data
 - if 2025 full-year results are unavailable, use 2025 interim data explicitly
 - do not relabel 2024H1 segment data as 2025H1
+- remember that the 2025 annual report and 2025 results announcement may already print 2024 comparative figures; check those comparative columns before writing that a 2024 KPI is unavailable
 
 ### 3. EBITDA vs EBIT matters a lot for transport operations
 

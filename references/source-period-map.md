@@ -27,8 +27,10 @@ For each source, record:
 1. List all official filings used for the task.
 2. For each filing, record the covered period separately from the disclosure date.
 3. Mark whether the filing supports income-statement analysis, balance-sheet analysis, financing commentary, or management outlook.
-4. Reject any attempt to label a later disclosure date as if it were a later operating period.
-5. Before charting, confirm that all series in the same exhibit share a compatible period type.
+4. Record whether the filing contains comparative columns for the prior period. When a current-year annual report or results announcement presents prior-period comparatives, treat those comparatives as official usable prior-period data.
+5. Reject any attempt to label a later disclosure date as if it were a later operating period.
+6. Before charting, confirm that all series in the same exhibit share a compatible period type.
+7. Before marking a KPI as missing for the prior period, verify that the current-period filing and its comparative columns truly do not disclose it.
 
 ## Tooling note
 
