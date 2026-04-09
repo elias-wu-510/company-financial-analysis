@@ -151,8 +151,13 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
    - If the task is about operating model, check that the report explains the linkage among traffic, monetisation, recurring income, cyclical profit, and financing structure rather than only listing segment figures.
    - Separate recurring earnings logic from timing-sensitive development or disposal gains.
 
-10. **Final challenge**
-   - Ask: would a detail-oriented reviewer challenge this sentence, chart, comparison, dashboard title, or page heading for mixed periods, mixed metrics, unsupported judgment, incomplete metric coverage, draft-like language, or inconsistent labels?
+10. **Derived-metric integrity gate**
+   - For every calculated metric such as FCF, ROA, ROE, net debt, current ratio, or quick ratio, show the formula, the exact inputs, the period labels, and the arithmetic result.
+   - Label the metric as calculated / derived / estimated rather than official unless the company itself discloses the same metric.
+   - If a required input is missing or the period basis is not comparable, remove the metric or state the gap explicitly instead of guessing.
+
+11. **Final challenge**
+   - Ask: would a detail-oriented reviewer challenge this sentence, chart, comparison, dashboard title, or page heading for mixed periods, mixed metrics, unsupported judgment, incomplete metric coverage, draft-like language, inconsistent labels, or hidden calculation assumptions?
    - If yes, revise before delivery.
 
 ## Bundled resources
