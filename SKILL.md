@@ -12,8 +12,8 @@ Analyze a listed company from official filings and produce a cited report ground
 1. Prefer official investor-relations pages, annual/interim reports, and official results announcements.
 2. Download the official PDFs when possible.
 3. Extract text from PDFs.
-4. For company-analysis tasks, proactively search the company’s most recent three months of news, announcements, press releases, investor updates, and external operating developments as a mandatory retrieval layer, not an optional extra.
-5. Treat those news, announcements, press releases, and external operating updates as a default retrieval layer whenever they may help explain revenue change, major projects, recovery, industry position, or future potential. Search them proactively, then decide whether they belong in the report based on evidence strength and period fit.
+4. For company-analysis tasks, proactively search the company’s most recent three months of news, announcements, press releases, investor updates, management presentations, company-overview decks, pre-blackout decks, and external operating developments as a mandatory retrieval layer, not an optional extra.
+5. Treat those news, announcements, press releases, investor updates, management presentations, company-overview decks, pre-blackout decks, and external operating updates as a default retrieval layer whenever they may help explain revenue change, segment mix, major projects, recovery, capital spending, industry position, or future potential. Search them proactively, then decide whether they belong in the report based on evidence strength and period fit.
 6. Build a year-by-year source map before analysis whenever the user asks about multiple years, a year range, or phrases such as "from 2024 to 2025", "over the last two years", or similar. For each requested year, identify the official financial documents that actually cover that year.
 7. Build a period map before analysis. State clearly whether each exhibit uses full-year, half-year, quarter, trailing-twelve-month, or point-in-time balance-sheet data.
 8. Distinguish carefully between (a) financial data for a period, (b) documents disclosed in a later calendar year, and (c) outlook, guidance, financing plans, or management commentary. Do not treat a disclosure date in a later year as financial data for that later year.
@@ -45,13 +45,20 @@ Analyze a listed company from official filings and produce a cited report ground
 25. Decide the delivery level before drafting: Level 1 (baseline deliverable), Level 2 (enhanced), or Level 3 (deep research). Default to Level 1 unless the user explicitly asks for more depth or the time/source budget clearly supports it.
 26. If the deliverable includes a financial overview, KPI panel, or metrics dashboard, validate it against `references/financial-dashboard-minimum.md`. If the panel is incomplete, state the gap explicitly rather than silently presenting it as a full dashboard.
 27. If the deliverable is a Traditional Chinese client-facing report, run one final pass against `references/final-cn-delivery-checklist.md` so the output reads like a finished Chinese report rather than a half-localized analysis draft.
-28. Output a single-file HTML report when HTML is requested, with:
-   - executive summary
-   - sectioned analysis
-   - evidence blocks
+28. Output a single-file HTML report when HTML is requested. Prefer the following delivery structure unless the user asks otherwise:
+   - title block
+   - three short opening cards: core conclusion, platform logic, reading caution
+   - report scope and core judgment
+   - core charts section
+   - dedicated operating / leverage / dashboard sections
+   - operating-model section
+   - profit-driver section
+   - full body analysis section with numbered subsections
+   - final integrated conclusion section
    - references
-   - inline charts when requested
-29. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
+29. For deliverable company reports, prefer a layered structure: first let the reader see the answer, then the key charts, then the dashboard, then the full reasoning. Do not jump straight into long-form body text when a client-facing layout is expected.
+30. End the report with an integrated conclusion section rather than a loose recap. The closing section should synthesize: (a) what the company is, (b) what changed in the period, (c) what really drove the change, (d) what should and should not be over-interpreted, and (e) what future direction matters most.
+31. Before sending any client-delivery HTML that contains charts, run `scripts/chart_sanity_scan.py` on the final HTML, review warnings, and fix or simplify any misleading chart before export or delivery.
 
 ## Read these references when relevant
 
@@ -91,6 +98,8 @@ Analyze a listed company from official filings and produce a cited report ground
 - If source terminology is commonly cited in English, keep the English term in brackets on first use after the Traditional Chinese explanation.
 - For Traditional Chinese client-facing delivery, localize page titles, section headings, KPI labels, chart titles, and annotations as far as practical; do not leave the page looking like a partially translated analyst workpaper.
 - Avoid draft-like page labels such as "company analysis", "FY2025 analysis", "FY2024 baseline", "notes", or similar packaging language in the final deliverable unless the user explicitly wants an internal memo style.
+- In client-facing HTML, prefer a front-loaded structure with visible answer-first sections such as 核心結論 / 平台邏輯 / 閱讀提醒 / 報告範圍與核心判斷 / 核心圖表 / 財務指標總覽 before the full body analysis.
+- Prefer the final closing heading to read like 綜合評價 / 綜合判斷 / 整體結論 rather than a vague closing note. The closing should integrate business model, current-period change, earnings quality, balance-sheet interpretation, and future direction in one coherent landing section.
 - If English abbreviations remain necessary, avoid clustering too many of them in the same sentence or heading; prefer a Chinese lead term with the English term or abbreviation in brackets on first use.
 - When a page is presented as a detailed metrics overview or dashboard, do not treat a small subset of metrics as if it were a complete panel; either meet the minimum dashboard standard or state clearly that the panel is partial.
 - Write for a reader who does not already know the company, industry, or metric set.
@@ -147,11 +156,16 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
    - Remove duplicate or highly overlapping charts unless each serves a distinct analytical purpose.
    - Confirm the chart title, unit, period, and metric level are explicit.
 
-9. **Operating-model gate**
+9. **Delivery-structure gate**
+   - Check that the report is layered in a client-facing sequence: answer first, then key charts, then dashboard / key metrics, then full body analysis.
+   - Ensure there is a visible front section for core conclusion, platform logic, and reading caution when the deliverable is a formal HTML report.
+   - Ensure the report ends with an integrated conclusion section rather than an abrupt stop after body text.
+
+10. **Operating-model gate**
    - If the task is about operating model, check that the report explains the linkage among traffic, monetisation, recurring income, cyclical profit, and financing structure rather than only listing segment figures.
    - Separate recurring earnings logic from timing-sensitive development or disposal gains.
 
-10. **Derived-metric integrity gate**
+11. **Derived-metric integrity gate**
    - For every calculated metric such as FCF, ROA, ROE, net debt, current ratio, or quick ratio, show the formula, the exact inputs, the period labels, and the arithmetic result.
    - Label the metric as calculated / derived / estimated rather than official unless the company itself discloses the same metric.
    - If a required input is missing or the period basis is not comparable, remove the metric or state the gap explicitly instead of guessing.
@@ -205,3 +219,5 @@ Before final delivery, execute this checklist explicitly. If any item fails, rev
 - For charted HTML, prefer inline SVG or self-contained HTML with no external JS dependency.
 - For heavy-asset, infrastructure, transport, utility, telecom, or property-linked companies, check whether EBITDA and EBIT tell materially different stories before concluding which segment is more profitable or more cash generative.
 - Treat perpetual capital securities and other hybrid instruments carefully. A filing may classify them as equity while readers still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.
+y leverage ratios may look better without equivalent economic deleveraging.
+aders still need an explanation of their financing role and why leverage ratios may look better without equivalent economic deleveraging.

@@ -55,3 +55,35 @@
 - [ ] 視需要把 client-delivery 版再細化成簡報型 / 長報告型兩套模板。
 - [ ] 視需要把新聞事件映射再做成可複用的資料層模板。
 - [ ] 視需要把 chart sanity scan 擴展到 line / area / stacked charts。
+
+## 下一階段：深度研究版升級路線
+
+目標：把 `company-financial-analysis` 從「成熟 final draft / reviewer-sensitive 客戶稿」提升到可穩定支援 Level 2+ / Level 3 深度研究版公司分析。主 SKILL.md 保持精簡，深度能力優先放在 references/ 與必要 scripts/。
+
+### Deep Research — P0（先補研究骨架）
+- [ ] 新增 `references/multi-year-trend-analysis.md`
+  - 定義 3 年 / 5 年趨勢拉取規則、優先指標、不能硬拉的情況、趨勢結論寫法。
+- [ ] 新增 `references/peer-selection-framework.md`
+  - 定義 peer 如何選、什麼叫可比 / 只能參考、peer comparison 的最小輸出骨架。
+- [ ] 新增 `references/regional-and-segment-deep-dive.md`
+  - 定義何時要做分區域 / 分業務深拆，如何把收入、利潤、戰略角色與風險接回整體 thesis。
+- [ ] 更新 `SKILL.md` 入口規則
+  - 當任務包含「深度研究 / 長期趨勢 / 同業比較 / 區域拆解 / 治理」等信號時，默認走 deep-research path，並讀取相應 references。
+
+### Deep Research — P1（把深研版結構做穩）
+- [ ] 新增 `references/deep-research-report-structure.md`
+  - 固化深研版報告章節順序：summary / thesis / multi-year trend / segment-region / peers / balance sheet / governance / risks / conclusion。
+- [ ] 新增 `references/capital-allocation-and-financing-history.md`
+  - 補資本配置、融資歷史、hybrid / perpetual、再融資、CapEx 週期的分析框架。
+- [ ] 新增 `references/governance-management-and-incentives.md`
+  - 補治理、管理層、薪酬、激勵一致性何時值得寫、寫到什麼深度、如何避免寫成百科。
+
+### Deep Research — P2（行業化深化與工具化）
+- [ ] 新增 `references/deep-research-chart-templates.md`
+  - 補多年趨勢、peer snapshot、capital structure evolution、region/segment panels 等圖表模板。
+- [ ] 擴更多 deep-dive case notes
+  - 例如 rail platform、utilities、telecom、property-linked platform 的深研版專項 notes。
+- [ ] 視需要新增工具腳本
+  - 例如 `scripts/build_multi_year_metric_panel.py`
+  - 例如 `scripts/build_peer_snapshot_table.py`
+  - 例如 `scripts/build_segment_region_matrix.py`
